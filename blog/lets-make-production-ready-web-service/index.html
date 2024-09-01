@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="blog-wrapper blog-post-page plugin-blog plugin-id-default" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.4.0">
+<title data-rh="true">채널톡 동사무소 | My Site</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://tech-writing-group.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://tech-writing-group.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://tech-writing-group.github.io/blog/lets-make-production-ready-web-service"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" property="og:title" content="채널톡 동사무소 | My Site"><meta data-rh="true" name="description" content="안녕하세요, 채널톡 백엔드 개발자 두기입니다 👋"><meta data-rh="true" property="og:description" content="안녕하세요, 채널톡 백엔드 개발자 두기입니다 👋"><meta data-rh="true" property="og:type" content="article"><meta data-rh="true" property="article:published_time" content="2024-08-11T00:00:00.000Z"><meta data-rh="true" name="robots" content="noindex, nofollow"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://tech-writing-group.github.io/blog/lets-make-production-ready-web-service"><link data-rh="true" rel="alternate" href="https://tech-writing-group.github.io/blog/lets-make-production-ready-web-service" hreflang="en"><link data-rh="true" rel="alternate" href="https://tech-writing-group.github.io/blog/lets-make-production-ready-web-service" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://tech-writing-group.github.io/blog/lets-make-production-ready-web-service","mainEntityOfPage":"https://tech-writing-group.github.io/blog/lets-make-production-ready-web-service","url":"https://tech-writing-group.github.io/blog/lets-make-production-ready-web-service","headline":"채널톡 동사무소","name":"채널톡 동사무소","description":"안녕하세요, 채널톡 백엔드 개발자 두기입니다 👋","datePublished":"2024-08-11T00:00:00.000Z","author":[],"keywords":[],"isPartOf":{"@type":"Blog","@id":"https://tech-writing-group.github.io/blog","name":"Blog"}}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="My Site RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="My Site Atom Feed"><link rel="stylesheet" href="/assets/css/styles.eaccac5c.css">
+<script src="/assets/js/runtime~main.6500d568.js" defer="defer"></script>
+<script src="/assets/js/main.8885095b.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">My Site</b></a><a class="navbar__item navbar__link" href="/docs/intro">Tutorial</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/blog">Blog</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="container margin-vert--lg"><div class="row"><aside class="col col--3"><nav class="sidebar_re4s thin-scrollbar" aria-label="Blog recent posts navigation"><div class="sidebarItemTitle_pO2u margin-bottom--md">Recent posts</div><ul class="sidebarItemList_Yudw clean-list"><li class="sidebarItem__DBe"><a aria-current="page" class="sidebarItemLink_mo7H sidebarItemLinkActive_I1ZP" href="/blog/lets-make-production-ready-web-service">채널톡 동사무소</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/welcome">Welcome</a></li></ul></nav></aside><main class="col col--7"><div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning theme-unlisted-banner"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Unlisted page</div><div class="admonitionContent_BuS1">This page is unlisted. Search engines will not index it, and only users having a direct link can access it.</div></div><article><header><h1 class="title_f1Hy">채널톡 동사무소</h1><div class="container_mt6G margin-vert--md"><time datetime="2024-08-11T00:00:00.000Z">August 11, 2024</time> · <!-- -->33 min read</div></header><div id="__blog-post-container" class="markdown"><p>안녕하세요, 채널톡 백엔드 개발자 두기입니다 👋</p>
+<p>저는 최근 출시된 <a href="https://channel.io/ko/documents" target="_blank" rel="noopener noreferrer">도큐먼트</a> 제품을 개발하고 있어요. 직접 서비스를 책임지고 운영하는 것은 이번이 첫 경험이에요. 6월 27일에 공식 릴리즈 된 이후 두 달 정도 지났는데, <strong>운영 단계</strong>의 에피소드와 느낀 점을 정리하는 글입니다. 도큐먼트를 포함한 채널톡이라는 서비스는 다른 기업이 사용하는 B2B 제품이기 때문에 사용자의 요청이나 문의, 클레임이 B2C 제품에 비해 복잡하고, 사용자의 문제를 잘 파악해서 해결해야 하는 부분이 많다고 생각해요. 특히 채널톡에서는 고객 문의(유저챗)에 개발자나 제품팀 멤버들이 초대되어 문의를 직접 해결하기도 합니다. 그래서 이번 편은 사용자의 직접 문의(민원)를 해결하는 동사무소 컨셉이에요.</p>
+<p>꼭 도큐먼트 제품에서 발생한 상황은 아니고, 이전에 다른 사례의 예시를 참고하기도 했으며, 적당한 각색을 통해 재구성했으니 참고해주세요!</p>
+<blockquote>
+<p>이번 동사무소 편의 이전 시리즈인 &quot;채널톡 탐정사무소&quot; 글이 궁금하다면?</p>
+<ul>
+<li><a href="https://channel.io/ko/blog/tech-backend-be-detective-office" target="_blank" rel="noopener noreferrer">채널톡 탐정사무소</a></li>
+</ul>
+</blockquote>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="모든-사용자-데이터-변경에는-흔적이-남아야-한다">모든 사용자 데이터 변경에는 흔적이 남아야 한다<a class="hash-link" aria-label="Direct link to 모든 사용자 데이터 변경에는 흔적이 남아 야 한다" title="Direct link to 모든 사용자 데이터 변경에는 흔적이 남아야 한다" href="/blog/lets-make-production-ready-web-service#모든-사용자-데이터-변경에는-흔적이-남아야-한다">​</a></h2>
+<p>어느 날 굉장히 다급해 보이는 사용자 한 명이 찾아왔어요.</p>
+<p>&quot;제가 이것저것 만지다가 아티클(글)이 다 날아간 것 같아요 ㅠㅠ 혹시 어떻게 복구할 수 있는 방법이 없을까요? 😭&quot;</p>
+<p>정말 영구 삭제를 했다면 복구가 어려울텐데.. 라고 생각하며 두기는 이 때를 위해 준비한 audit log(데이터 변경 이력)을 조회해보았어요. 그런데 이 사용자에게는 아티클을 영구 삭제한 이력이 없었어요.</p>
+<p>이상함을 느낀 두기는 사용자에게 몇 가지 물어보았고, 알고 보니 이 사용자는 글을 삭제한 것이 아니라, 그냥 메인 화면에서 노출이 안되게 숨겨놓았던 것이었어요(관련 설정값을 바꾼 이력도 있었구요). 이렇게 저렇게 하면 다시 숨김이 해제된다고 알려드렸고, 결과는 해피 엔딩!</p>
+<p>데이터 변경 이력을 남기지 않았다면 정확하게 어떤 상황인지 파악을 하기 어려웠을거고, 그냥 영구 삭제한 글은 복원이 안돼요 😭 하고 돌려보낼 수밖에 없었을 거에요. 다른 문의가 들어왔을 때도 탐정처럼 주변 엔티티 정보를 관찰하면서 추측만 하는 게 아니라 간단하게 이력 조회로 쉽게 해결이 가능하겠죠?</p>
+<ul>
+<li>문의가 들어왔을 때 어떤 상황에서 문제가 발생했는지 주변 맥락을 파악해야 하는데, 데이터 변경 이력은 큰 도움이 되었어요.</li>
+<li><strong>사용자는 자신이 어떤 행동을 했는지 정확하게 설명할 수 있는 경우가 드물기 때문에</strong> 맥락을 재구성하려면 꼭 필요한 정보에요.</li>
+</ul>
+<img src="/assets/images/img1-4fd95d91dd30b84d8781137f69c409d5.jpg" width="400">
+<ul>
+<li>  문제가 사용자의 액션 때문인지, 우리 코드의 버그 때문인지 구분하는 데에도 유용한 근거로 사용할 수 있어요.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="데이터-변경-이력-도입기">데이터 변경 이력 도입기<a class="hash-link" aria-label="Direct link to 데이터 변경 이력 도입기" title="Direct link to 데이터 변경 이력 도입기" href="/blog/lets-make-production-ready-web-service#데이터-변경-이력-도입기">​</a></h3>
+<p>사실 데이터 변경 이력은 서비스 운영 초반부에 넣을 생각은 아니었어요. (갈 길이 급한데...)</p>
+<p>도큐먼트는 6월 말 공식 릴리즈 전 4월에 저희 팀 내부 가이드에 먼저 릴리즈 되었어요. 그런데 릴리즈 된 지 일주일도 안 되어서 가이드 문서에 접속이 안 된다는 리포트가 들어왔어요! 😱</p>
+<p>빠르게 확인해보니, <strong>웹사이트 발행 상태가 OFF로 변경되어 있었어요.</strong> 누가 테스트하거나, 데모를 보여주다가 OFF로 돌리고 까먹고 가버린 거죠. 원래 운영용 채널에서는 테스트나 데모를 하면 안 되고 이걸 위한 공간이 따로 준비되어 있지만, 항상 지켜지기를 기대하기는 어려운 일이죠.</p>
+<p>이런 일을 다시 겪기 싫었던 두기는 결국 데이터 변경 이력 (audit log) 기능과 권한 세분화 기능을 빠르게 구현해두었어요. 다행히 코드상으로는 아래와 같은 패턴을 사용해서 깔끔하게 들어갈 수 있었네요!</p>
+<div class="language-go codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-go codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token comment" style="color:#999988;font-style:italic">/* 인터페이스 */</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">type</span><span class="token plain"> MyService </span><span class="token keyword" style="color:#00009f">interface</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">// 데이터 변경 이력과 권한 체크가 되어야 하는 오퍼레이션</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token function" style="color:#d73a49">VeryImportantOperation</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">ctx context</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">Context</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> params VeryImportantParams</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">VeryImportantResult</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token builtin">error</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic">/* 실제 구현 (비즈니스 로직) */</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">type</span><span class="token plain"> myServiceImpl </span><span class="token keyword" style="color:#00009f">struct</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">// ...</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">func</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">svc </span><span class="token operator" style="color:#393A34">*</span><span class="token plain">myServiceImpl</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">VeryImportantOperation</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">ctx context</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">Context</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> params VeryImportantParams</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">VeryImportantResult</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token builtin">error</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">// 여기에는 비즈니스 로직만 가지고 있음</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic">/* Audit log 기능으로 감싼 서비스 */</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">type</span><span class="token plain"> auditLogEnhancedMyService </span><span class="token keyword" style="color:#00009f">struct</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  inner MyService</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">// ...</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">func</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">svc </span><span class="token operator" style="color:#393A34">*</span><span class="token plain">auditLogEnhancedMyService</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">VeryImportantOperation</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">ctx context</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">Context</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> params VeryImportantParams</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">VeryImportantResult</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token builtin">error</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">// 내부 서비스 호출</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  res</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> err </span><span class="token operator" style="color:#393A34">:=</span><span class="token plain"> svc</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">inner</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">VeryImportantOperation</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">ctx</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> params</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">if</span><span class="token plain"> err </span><span class="token operator" style="color:#393A34">!=</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">nil</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> res</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> err</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">// 여기에서 audit log 기록</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  auditLogSvc</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">Record</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">ctx</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&quot;VeryImportantOperation&quot;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">map</span><span class="token punctuation" style="color:#393A34">[</span><span class="token builtin">string</span><span class="token punctuation" style="color:#393A34">]</span><span class="token keyword" style="color:#00009f">interface</span><span class="token punctuation" style="color:#393A34">{</span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token string" style="color:#e3116c">&quot;params&quot;</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> params</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token string" style="color:#e3116c">&quot;result&quot;</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> res</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> res</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> err</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic">/* ... 비슷하게 권한 체크도 처리 ... */</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic">/* Dependency Injection 단계에서 서로 wiring 해주기 */</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">var</span><span class="token plain"> Option </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> fx</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">Options</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  fx</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">Provide</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">fx</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">Annotate</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">NewMyService</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> fx</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">ResultTags</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">`name:&quot;MyService.0&quot;`</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  fx</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">Provide</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">fx</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">Annotate</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">EnhanceWithAuditLog</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> fx</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">ParamTags</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">`name:&quot;MyService.0&quot;`</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">)</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="관련-사례">관련 사례<a class="hash-link" aria-label="Direct link to 관련 사례" title="Direct link to 관련 사례" href="/blog/lets-make-production-ready-web-service#관련-사례">​</a></h3>
+<p>앞선 경우는 저희 팀에서 겪었던 사례지만, 비슷하게 팀원 간 커뮤니케이션 미스나 실수로 문제가 발생하는 경우가 많아요.</p>
+<ul>
+<li>영구 삭제를 직접 했는데, 다시 문의해서 복원해달라고 요청하는 경우
+(안 되는 것이 원칙이지만, 가끔 가능할 때 해결해주면 굉장히 고마워함)</li>
+<li>고객사의 수천 개 데이터가 갑자기 사라졌는데 범인을 몰라요. 사실 범인은 고객사의 누군가가 퇴사하면서 지우고 나간 것이었어요. 심지어 &quot;한 번에 삭제&quot; 기능도 아니고 수천 건을 하나하나 삭제하고 나가서 눈치채기 어려웠어요.</li>
+<li>고객사의 한 팀원이 어떤 설정값을 변경했는데, 그 옆자리 팀원이 문의해서 누가 변경했는지 물어보네요. (누가 바꿨는지 알려드리고 원만히 합의 보시라고 안내) 서로 대화 좀 하세요..</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="백오피스-도구를-준비하자">백오피스 도구를 준비하자<a class="hash-link" aria-label="Direct link to 백오피스 도구를 준비하자" title="Direct link to 백오피스 도구를 준비하자" href="/blog/lets-make-production-ready-web-service#백오피스-도구를-준비하자">​</a></h2>
+<p>또 다른 사용자가 문의를 주었어요. 이번에는 &quot;아티클을 공개 했는데, 메인 화면에 노출이 안 된다&quot;고 하네요. 다행히 아주아주 간단한 문의에요. 사실 이 정도는 CX팀에서 익숙해지면 해결하실 수 있는데, 아직 신규 제품이다 보니 직접 만든 저희 팀만 제품 기능에 대해 정확하게 알고 있는 것이 많아요. 그래서 메인 화면에 노출 여부를 결정하는 설정값들을 확인하려고 하는데... 어떻게 보죠? 🤔</p>
+<p>사용자 문의가 들어오거나 버그인지 확인하는 과정은 사용자의 설정값을 살펴보고 어떤 데이터가 있는지 확인하는 것으로부터 시작해요. 이 때마다 데이터베이스에 직접 연결해서 쿼리를 날리는 것은 번거롭기도 하고, 권한이나 보안 관리가 잘 안 된다면 큰 문제가 생길 수도 있어요.</p>
+<p>이런 상황을 위해 두기는 미리 운영 데이터베이스의 read replica를 준비해두고, 쿼리 도구인 <a href="https://redash.io/" target="_blank" rel="noopener noreferrer">Redash</a>와 연결해두었어요. 이제 웹에 접속해서 간단하게 쿼리를 통해 원하는 데이터를 확인할 수 있고, SAML(구글 계정 로그인)로 계정과 권한 관리가 되기 때문에 걱정 없어요!</p>
+<p>그런데 문제가 있어요. 팀에서 SQL을 짤 수 있는 사람이 백엔드 개발자(a.k.a. 바로 나)밖에 없어요. 자연스럽게 모든 고  객 문의가 저로 라우팅 되어버렸어요.</p>
+<p>이러한 상황에서 또 할 수 있는 것들이 있어요.</p>
+<ul>
+<li>쿼리를 작성해야만 데이터를 확인할 수 있지 않도록, GUI와 검색 기능을 갖춘 백오피스 웹 클라이언트를 직접 만들어두는 것이에요. 물론 손이 많이 가는 작업이기 때문에 천천히 준비하고 있어요.</li>
+<li>
+<s>다른 팀원에게 SQL을 공부하라고 시키면 돼요.</s>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="보고서-쓰기">보고서 쓰기<a class="hash-link" aria-label="Direct link to 보고서 쓰기" title="Direct link to 보고서 쓰기" href="/blog/lets-make-production-ready-web-service#보고서-쓰기">​</a></h2>
+<p>도큐먼트는 신규 제품이라서 할 수 있는 것들이 많아요. 무엇을 하고 하지 않을지 고르고, 우리가 잘 하고 있는지 확인해야 하니 우리가 중요하게 생각하는 숫자를 정리하고, 매주 보고서를 작성하고 있어요. 또 보고서는 외부 홍보용으로 쓰이기도 하고, 팀에서 우리 잘하고 있다고 자랑하기 위해 쓰기도 해요.</p>
+<p>이런 리포트 쓰는 일은 소프트웨어 개발이 아니니까 다른 사람이 해주나요? 당연히 그럴 리가 없어요. 채널 동사무소 스타트업에 다니는 개발자는 어쨌든 필요하고 내가 할 수 있는 일이면 해야해요. 다행히 Redash를 이미 사용하고 있기 때문에 쿼리를 돌리고 결과를 시각화하는 것은 아주 쉬워요. (그냥 Redash에서 제공하는 기능을 활용하면 돼요.)</p>
+<p><img decoding="async" loading="lazy" alt="img4" src="/assets/images/img4-b3f2fd2684ec6b217166c4dc769511b6.png" width="1544" height="846" class="img_ev3q"></p>
+<p>금방 다채로운 대시보드 리포트가 완성되었어요!</p>
+<p>다른 팀의 요청으로 데이터 추출이 필요한 경우에도 CSV export 기능</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="읽기-전용-데이터베이스와-쿼리-시각화-도구">읽기 전용 데이터베이스와 쿼리 시각화 도구<a class="hash-link" aria-label="Direct link to 읽기 전용 데이터베이스와 쿼리 시각화 도구" title="Direct link to 읽기 전용 데이터베이스와 쿼리 시각화 도구" href="/blog/lets-make-production-ready-web-service#읽기-전용-데이터베이스와-쿼리-시각화-도구">​</a></h3>
+<ol start="10">
+<li>일단 개발자가 직접 운영 DB에 접속해서 쿼리를 날리는 게 일반적인 습관으로 자리잡는 것은 아주 나쁜 생각임</li>
+</ol>
+<ul>
+<li><a href="https://techblog.woowahan.com/2645/" target="_blank" rel="noopener noreferrer">https://techblog.woowahan.com/2645/</a> 를 읽어보길 바람</li>
+<li>안전한 데이터 조회를 위해 read replica를 운용하고 있음</li>
+</ul>
+<ol start="11">
+<li>이것에 더해 쿼리 시각화 도구 (Redash) 를 사용하고 있음</li>
+</ol>
+<ul>
+<li>
+<p>개발자들이 redash에서 쿼리를 날려보면서 개발과 디버깅을 하는 것이 일상적</p>
+</li>
+<li>
+<p>주의: Redash에서 수십 분 걸리는 쿼리를 실행하는 것은 위험</p>
+<ul>
+<li>PostgreSQL에서 read replica의 트랜잭션도 master의 vacuum이 작업 실행을 막기 떄문</li>
+<li>Vacuum이 수십 분 이상 돌지 않을 경우 write가 많은 테이블에서 성능 문제가 생기기 시작함</li>
+</ul>
+</li>
+</ul>
+<ol start="12">
+<li>Redash는 시각화 기능도 가지고 있지만, 굳이 기능을 사용하지 않더라도 충분히 유용함</li>
+</ol>
+<ul>
+<li>SAML을 연결할 수 있고</li>
+<li>자주 사용하는 쿼리를 저장해두거나</li>
+<li>데이터 export 기능을 편리하게 이용하고 있음</li>
+</ul>
+<ol start="13">
+<li>쿼리 시각화 (대시보드)</li>
+</ol>
+<ul>
+<li>SQL을 몰라서 직접 쿼리를 짤 수 없는 팀 멤버도 주요 지표를 확인할 수 있음</li>
+<li>서비스 초기부터 핵심 지표를 정해두고 Redash에 대시보드로 만들어둠 -&gt; 매주 리포트를 공 유 (리포트 쓰는데 15분밖에 안 걸림)</li>
+</ul>
+<p>Redash는 백오피스 툴 중에서 가장 팀에서 일상적으로 사용하고 있는 듯.</p>
+<ol start="14">
+<li>물론 (백엔드팀 Admin Cell과 웹 클라이언트 팀에서 개발한) &quot;진짜&quot; 백오피스도 있음</li>
+</ol>
+<ul>
+<li>아직 우리 팀에서 운영하는 기능과 연결이 안되어있음</li>
+<li>효과: CX팀에서 직접 고객 문의와 관련된 맥락을 파악 못하고 개발자에게 하나하나 문의해야 함 -&gt; 개발자 한 명이 하루에 30분씩 시간 쓰는 요인</li>
+<li>백오피스에서 개발자가 아닌 사람이 엔티티를 읽고 검색할 수 있으면 나는 하루에 30분씩 획득</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="데이터베이스-백업과-복구">데이터베이스 백업과 복구<a class="hash-link" aria-label="Direct link to 데이터베이스 백업과 복구" title="Direct link to 데이터베이스 백업과 복구" href="/blog/lets-make-production-ready-web-service#데이터베이스-백업과-복구">​</a></h2>
+<p>이건 다행히 실제 운영단계는 아니고 개발 스테이징 서버의 에피소드에요.</p>
+<p>같이 도큐먼트를 개발하는 클라이언트 팀원이 갑자기 개발 서버에 테스트 중이던 데이터가 다 사라졌다고 멘션을 줬어요! 화들짝 놀란 두기는 빠르게 확인해봤는데, 진짜 데이터가 날아갔고 심지어 그 팀원이 보던 데이터 뿐만이 아니라 <strong>전체 데이터베이스가 날아간 것이었어요!</strong> 😱😱</p>
+<img src="/assets/images/img2-5bc14a710b2f0b901a6dbfd94f84064f.png" width="400">
+<p>나중에 쿼리 실행 로그를 보고 원인은 찾으면 되고, 그 전에 데이터베이스 복구를 해야겠죠. 다행히 저희 데이터베이스는 Amazon RDS 상에서 운영되고 있고, 스테이징 환경에서는 매일 자동으로 PITR 백업이 기록돼요. PITR 백업을 그대로 쓸 수는 없었어요(그 인스  턴스의 모든 데이터베이스가 PITR 시점으로 리셋되는건데, 저희 데이터베이스만 날아간 것이었거든요). 하지만 PITR로부터 새 인스턴스를 띄운 후 pg_dump로 데이터를 덤프 뜨고, 원래 인스턴스에 데이터를 밀어넣으니 복구 완료!</p>
+<p>사실 원인은 개발 환경에 붙어서 테스트 코드를 돌리다가 통합 테스트 코드의 truncate (<code>TRUNCATE TABLE {table_name} CASCADE</code>) 로직이 스테이징 데이터베이스에서 돌아간 것이었어요. 통합 테스트는 매번 테스트 데이터베이스를 초기화하고 실행하기 때문이죠. 코드상으로 실수가 발생할 수 있어보여 통합 테스트는 로컬 호스트에 대해서만 돌릴 수 있도록 방어 로직을 추가했어요.</p>
+<figure><img src="/assets/images/img3-fb75a44b922425adb796533cefcbc91b.png" width="400"><figcaption>(대문짝한 경고 문구)</figcaption></figure>
+<ul>
+<li>PITR로 복구가 가능한 건 머리로 알고 있었는데, 직접 복구하는 과정을 경험해보았어요! (개발자 업적 달성 🎉)</li>
+<li>실제 서비스였다면 PITR만으로는 부분적인 데이터 손실이 있어 추가적인 작업도 진행해야 할 거에요. 그리고 다른 마이크로서비스와의 정합성 오류도 체크 해야겠죠.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="admin">Admin<a class="hash-link" aria-label="Direct link to Admin" title="Direct link to Admin" href="/blog/lets-make-production-ready-web-service#admin">​</a></h2>
+<ol start="18">
+<li>개발자의 업무 시간을 잡아먹는 것은 Administration</li>
+</ol>
+<ul>
+<li>
+<p>토이프로젝트만 해 본 뉴비에게 실제 서비스 운영 경험을 꼭 추천하는 이유입니다.</p>
+</li>
+<li>
+<p>많은 서비스에서 코어 비즈니스 로직은 &quot;사실&quot; 그렇게 까다로운 부분은 아닙니다.</p>
+<ul>
+<li>
+<p>제일 중요하기 때문에 제일 잘 만들어두는 부분</p>
+</li>
+<li>
+<p>가장 좋은  구조로 설계해두고 깔끔</p>
+</li>
+<li>
+<p>정작 시간에 쫓겨 정밀하지 못한 코드나, 우아하지 못한 구조로 추가하게 되는 부분은 긴급한 버그 픽스나 admin 작업</p>
+</li>
+</ul>
+</li>
+<li>
+<p>버그로부터 생긴 데이터 부정합 고치기, 고객 요청에 따른 데이터 확인 또는 수정, 신규 기능 추가에 따른 마이그레이션이 개발자의 시간을 잡아먹습니다.</p>
+<ul>
+<li>
+<p>우리 팀의 경우 (B2B SaaS 도메인) 고객 요청이 많고 사용자 문의로 목소리를 직접 듣게 됨</p>
+</li>
+<li>
+<p>단순 확인 문의부터, 버그가 발생한 상황인지 맥락 확인, 데이터 옮겨주세요, 데이터 부어주세요, 등등</p>
+</li>
+</ul>
+</li>
+<li>
+<p>중요한 고객의 요청 하나를 해결하는데 일주일 중 3일을 쓰면 안 됨</p>
+</li>
+<li>
+<p>그렇다고 사용자 문의에 귀를 닫게 되면 1차 피드백을 얻을 창구가 사라지고 점점 뇌피셜로 제품을 만듬</p>
+</li>
+<li>
+<p>이 부분을 적은 노력으로 해결해야 내 시간을 절약해서 사용자에게 필요한 기능을 개발하는 데 쓸 수 있습니다.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="admin-api">Admin API<a class="hash-link" aria-label="Direct link to Admin API" title="Direct link to Admin API" href="/blog/lets-make-production-ready-web-service#admin-api">​</a></h3>
+<ol start="19">
+<li>엔티티에 대한 읽기와 쓰기 API는 항상 만들어둡니다.</li>
+</ol>
+<ul>
+<li>
+<p>반복 작업이고 패턴이 있기 때문에, 프레임워크나 code generation을 사용해도 좋을 것 같습니다.</p>
+</li>
+<li>
+<p>이 부분에서 GitHub Copilot에게 많은 도움을 받고 있습니다. 함수 이름만 잘 작성해도 대부분의 코드를 패턴에 맞게 만들어줌</p>
+</li>
+</ul>
+<ol start="20">
+<li>반복적으로 들어오는 요청 해결 위주로</li>
+</ol>
+<ul>
+<li>
+<p>운영 데이터베이스에 update 쿼리를 자주 날리고 있다면 그 작업에 대한 admin API가 필요하다는 신호입니다.</p>
+</li>
+<li>
+<p>다시 한번 개발자 머피의 법칙 (<a href="https://techblog.woowahan.com/2645/" target="_blank" rel="noopener noreferrer">https://techblog.woowahan.com/2645/</a>) 글 추천</p>
+</li>
+<li>
+<p>Admin API 호출도 사용자 요청과 마찬가지로 audit log가 남아야 합니다.</p>
+</li>
+</ul>
+<ol start="21">
+<li>SDK</li>
+</ol>
+<ul>
+<li>
+<p>서버사이드에서 Admin API를 만들었으면, 그걸 클라이언트 사이드에서 코드로 호출할 수 있는 SDK도 준비해두는 것이 유용했습니다.</p>
+</li>
+<li>
+<p>클라이언트 사이드 코드도 생성할 수 있는 도구도 많이 있습니다만 (gRPC같은걸 쓴다면 특히) 이런 걸 아직 사용하고 있지는 않습니다.</p>
+<p>역시 GitHub Copilot의 도움을 많이 받고 있음</p>
+</li>
+<li>
+<p>이전 프로젝트에서 복잡한 작업을 셸스크립트로 만들었지만, 셸스크립트에 능숙하지 않아 작업이 턱턱 막히고 비즈니스 로직을 활용하지 못하는 점이 아쉬움이었습니다.</p>
+</li>
+<li>
+<p>스크립트가 메인 프로젝트와 동일한 repository에서 코드와 비즈니스 로직을 공유할 때 다양한 작업을 처리할 수 있구나 생각했습니다. (메인 애플리케이션과 스크립트를 모노레포로 구성)</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="재사용-가능한-스크립트">재사용 가능한 스크립트<a class="hash-link" aria-label="Direct link to 재사용 가능한 스크립트" title="Direct link to 재사용 가능한 스크립트" href="/blog/lets-make-production-ready-web-service#재사용-가능한-스크립트">​</a></h3>
+<ol start="22">
+<li>결과적으로, Admin API와 모노레포 구조를 통해 복잡한 로직을 담은 스크립트를 30분 내에 뚝딱 작성할 수 있게 되었습니다.</li>
+</ol>
+<ul>
+<li>
+<p>데이터 스캔하면서 통계값을 뽑기</p>
+</li>
+<li>
+<p>데이터 정합성 맞추는 마이그레 이션 스크립트</p>
+</li>
+<li>
+<p>외부 데이터를 import 혹은 export</p>
+</li>
+<li>
+<p>Secondary database로의 전체 혹은 부분 데이터 동기화</p>
+</li>
+</ul>
+<ol start="23">
+<li>스크립트 작성하고 돌리며 했던 실수</li>
+</ol>
+<ul>
+<li>
+<p>원래 운영 환경에서 로그가 warn 이상 레벨이었는데, 스크립트에서 출력하는 로그는 info레벨이었기 때문에 로그를 못 보고 스크립트가 끝날 때까지 기다렸던 적이 있습니다.</p>
+<ul>
+<li>사실 이것 외에도 운영 환경의 &quot;서버&quot;와 &quot;스크립트&quot;는 살짝 configuration이 다르기 때문에 환경을 구분하는 것이 맞는 선택이었음</li>
+</ul>
+</li>
+<li>
+<p>마찬가지로 스크립트에서 발생한 에러가 이슈 추적 도구(sentry와 datadog 등)에 운영 서버와 동등하게 추적되어 혼란을 주었던 문제</p>
+</li>
+<li>
+<p>중간에 에러가 발생했을 때 에러 로그를 출력하긴 했는데 어떤 데이터에서 에러가 발생했는지를 같이 출력 안해서 찾는데 고생</p>
+</li>
+</ul>
+<ol start="24">
+<li>로그</li>
+</ol>
+<ul>
+<li>
+<p>스크립트에서 progress 로그를 print하지 않으면, 스크립트를 실행하는 순간..</p>
+<ul>
+<li>돌고 있는건지 어딘가에서 막혀있는건지.. 구별이 안됨</li>
+</ul>
+</li>
+<li>
+<p>로그에 정보를 되도록 많이 담아야 잘못 돌았을 때 실수를 커버할 수 있습니다.</p>
+</li>
+<li>
+<p>Dry run 옵션</p>
+<ul>
+<li>
+<p>운영환경 데이터에 개발환경과 다른 문제가 있을 수도 있음</p>
+</li>
+<li>
+<p>단순히 개발환경에서 충분히 많은 케이스를 테스트를 못했을 수도 있고</p>
+</li>
+<li>
+<p>데이터 정합성 조건이 변했다던가, 미처 마이그레이션 못한 옛날 데이터라던가, 등등</p>
+</li>
+<li>
+<p>Dry run 옵션을 두고 잘 구현하면 안전하게 테스트 할 수 있음</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Documentation과 스크립트 실행 옵션에 대한 설명을 상세  히 달아두면, 내가 휴가 갔을 때도 다른 팀원이 돌릴 수 있는 스크립트가 됩니다.</p>
+</li>
+</ul>
+<ol start="25">
+<li>부수효과</li>
+</ol>
+<ul>
+<li>
+<p>다양한 스크립트를 보유하고 있어, 팀에서 기능 QA할 때 쉽게 테스트 환경을 세팅할 수 있게 되었습니다.</p>
+</li>
+<li>
+<p>특히 최근에 릴리즈 한 AI 기반 상담 응대 (RAG) 기능에서 잘 써먹음</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="administration-정리">Administration: 정리<a class="hash-link" aria-label="Direct link to Administration: 정리" title="Direct link to Administration: 정리" href="/blog/lets-make-production-ready-web-service#administration-정리">​</a></h3>
+<ol start="26">
+<li>스노우볼 굴리기</li>
+</ol>
+<ul>
+<li>
+<p>반복적인 작업 처리를 위해 Admin API를 만들어둠</p>
+<p>-&gt; 복잡한 요청들을 거절하지 않고 API 요청 몇 개로 해결</p>
+<p>-&gt; 다시 반복되는 요청 패턴을 Admin SDK와 스크립트로 만들어둠</p>
+<p>-&gt; 스크립트가 여러 개 생기니, 스크립트 템플릿도 만들고 스크립트를 작성하고 돌리기가 쉬워짐</p>
+</li>
+<li>
+<p>패턴화와 내 업무 경험 개선의 반복</p>
+</li>
+<li>
+<p>복잡한 문의 해결을 요구하는 엔터프라이즈 레벨 고객 퀘스트도 깰 수 있게 되어 서비스에 락인 시키고, 서비스 지표에도 도움이 됨</p>
+</li>
+<li>
+<p>일주일에 이러한 요청 두세 개 처리하면서 기능 개발 스케줄에도 문제가 없었다! (휴)</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="reliability">Reliability<a class="hash-link" aria-label="Direct link to Reliability" title="Direct link to Reliability" href="/blog/lets-make-production-ready-web-service#reliability">​</a></h2>
+<ol start="27">
+<li>6월 27일 릴리즈 이후 3번의 incident가 있었습니다.</li>
+</ol>
+<ul>
+<li>2번째 incident 이후 사고 리포트를 쓰기 시작함</li>
+<li>2개는 도큐먼트 서비 스 전체 오류 (다 합해서 40분 정도.), 1개는 데이터 정합성 오류 및 내부 데이터 일부 손실</li>
+</ul>
+<ol start="28">
+<li>실수를 할 수 있음: &#x27;모든&#x27; 실수를 개발과 테스트 단계에서 잡고 가려 하면 일정을 맞추는 것이 불가능합니다.</li>
+</ol>
+<ul>
+<li>그럼에도 불구하고 개발과 테스트 중 바로잡는 것이 가장 저렴하긴 함</li>
+<li>95%를 99% 완성도로 만드는 것보다 99%를 99.9%로 만드는 것에 드는 비용이 기술적으로 더 비싸니까, 나머지 1% 완성도는 깔끔한 사고 수습을 통해 채워나가자</li>
+<li>실수를 두려워해서 모든 코드를 팀 리더(a.k.a. 사고났을 때 책임지는 사람)가 리뷰하고, 새로운 기술 도입에 소극적이고, 기능 릴리즈를 늦게 하는 것이 아니라, 실수해도 빠르게 바로잡을 수 있는 환경을 만들자</li>
+</ul>
+<ol start="29">
+<li>그럼에도 불구하고 1) 실수 한 것을 최대한 빨리 인지 2) 고객에게 장애 발생을 전파 3) 이유와 복구 상황을 설명 4) 실수를 수습하는 과정 이 깔끔하면 좋겠습니다.</li>
+</ol>
+<ul>
+<li>40분이나 service outage된 것이 아쉬움<!-- -->
+<ul>
+<li>지금 릴리즈 한 지 2달 정도 됐으니 약 99.95% availability (?) 오히려 좋아</li>
+</ul>
+</li>
+<li>첫번째 사고는 4분만에 고쳤는데 나머지 하나 전체 장애 때는 인지하는 데 30분 걸림</li>
+<li>정합성 문제는 겉으로 볼 때 정상적으로 돌아가는 것처럼 보이니 더 찾기 어려웠고, 하루 만에야 뭔가 잘못되었다는 것을 찾음<!-- -->
+<ul>
+<li>(당연하겠지만) 실수한 걸 빨리 찾을수록 수습이 쉬움</li>
+<li>1시간만에 찾았으면 데이터 몇 개 보정할 걸 하루만에 찾아서 몇백 개를 보정하느라 고생</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="사고-리포트">사고 리포트<a class="hash-link" aria-label="Direct link to 사고 리포트" title="Direct link to 사고 리포트" href="/blog/lets-make-production-ready-web-service#사고-리포트">​</a></h3>
+<ol start="30">
+<li>1번 사고</li>
+</ol>
+<ul>
+<li>사용자의 입력을 충분히 검증하지 않아서 발생한 문제</li>
+<li>3번째로 추천 글: <a href="https://techblog.woowahan.com/2645/" target="_blank" rel="noopener noreferrer">https://techblog.woowahan.com/2645/</a> 를 읽어보기 바람</li>
+<li>서비스 출시 초기라 서버에 적은 리소스가 할당되어 있었는데 (RAM 500MiB짜리 아주 작고 귀여운 서버), 너무 큰 입력을 잘 처리하지 못해 OOM 발생</li>
+<li>서버 프로세스가 다중화되어 있었지만, 사용자가 너무 큰 입력을 담은 요청을 보내면서 우리 서버를 차례차례 암살 🔪</li>
+<li>당시에는 1) 서버 리소스를 늘려서 즉시 대응 하고, 이후 수습 과정에서 2) 사용자 입력을 검증하는 한편 3) 이미 데이터베이스에 들어온 너무 큰 데이터들을 정리하는 스크립트를 통해 해결</li>
+</ul>
+<ol start="31">
+<li>2번 사고</li>
+</ol>
+<ul>
+<li>서버 프로세스 자체는 healthy 였음</li>
+<li>그런데 서버 애플리케이션으로부터 데이터베이스로 가는 요청이 모두 실패</li>
+<li>프로세스가 healthy니까 healthcheck는 통과해서 알람이 울리지 않음 -_-</li>
+<li>30분만에 팀 내부 제보로 인지하고 5분 후에 복구 함</li>
+<li>추후 조치로 healthcheck에서 애플리케이션이 의존하는 다른 외부 서비스의 health도 체크하도록 해야겠다. (준비 중)</li>
+</ul>
+<ol start="32">
+<li>3번 사고</li>
+</ol>
+<ul>
+<li>코드 상의 실수로 비동기로 이루어지는 작업 일부가 손실되는 문제</li>
+<li>사용자의 기능 사용에는 영향이 없지만, secondary database로의 동기화가 깨지는 문제점</li>
+<li>동기화를 Apache Kafka나 Kinesis Data Stream처럼 replay 할 수 있는 시스템이었다면 더 간단했겠지만, 그렇게 하고 있지 않았음</li>
+<li>문제가 발생했던 구간에서 업데이트가 일어났던 데이터를 찾고, secondary database에 다시 부어넣어주는 스크립트를 통해 해결</li>
+<li>아직 서비스가 작기 떄문에 영향받은 데이터가 적어서 (수백 개 정도) 수동으로 처리했지만, 나중에는 앞서 언급한것처럼 replay 할 수 있는 시스템이 있어야 할텐데</li>
+<li>그런데 역시 문제는 언제 이런 것들을 도입하는 것이 적절한가의 문제 (a.k.a. 닭잡칼 🐓 vs 소잡칼 🐄)</li>
+</ul></div><footer class="docusaurus-mt-lg"><div class="row margin-top--sm theme-blog-footer-edit-meta-row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2024-08-11-lets-make-production-ready-web-service.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article></main><div class="col col--2"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a class="table-of-contents__link toc-highlight" href="/blog/lets-make-production-ready-web-service#모든-사용자-데이터-변경에는-흔적이-남아야-한다">모든 사용자 데이터 변경에는 흔적이 남아야 한다</a><ul><li><a class="table-of-contents__link toc-highlight" href="/blog/lets-make-production-ready-web-service#데이터-변경-이력-도입기">데이터 변경 이력 도입기</a></li><li><a class="table-of-contents__link toc-highlight" href="/blog/lets-make-production-ready-web-service#관련-사례">관련 사례</a></li></ul></li><li><a class="table-of-contents__link toc-highlight" href="/blog/lets-make-production-ready-web-service#백오피스-도구를-준비하자">백오피스 도구를 준비하자</a></li><li><a class="table-of-contents__link toc-highlight" href="/blog/lets-make-production-ready-web-service#보고서-쓰기">보고서 쓰기</a><ul><li><a class="table-of-contents__link toc-highlight" href="/blog/lets-make-production-ready-web-service#읽기-전용-데이터베이스와-쿼리-시각화-도구">읽기 전용 데이터베이스와 쿼리 시각화 도구</a></li></ul></li><li><a class="table-of-contents__link toc-highlight" href="/blog/lets-make-production-ready-web-service#데이터베이스-백업과-복구">데이터베이스 백업과 복구</a></li><li><a class="table-of-contents__link toc-highlight" href="/blog/lets-make-production-ready-web-service#admin">Admin</a><ul><li><a class="table-of-contents__link toc-highlight" href="/blog/lets-make-production-ready-web-service#admin-api">Admin API</a></li><li><a class="table-of-contents__link toc-highlight" href="/blog/lets-make-production-ready-web-service#재사용-가능한-스크립트">재사용 가능한 스크립트</a></li><li><a class="table-of-contents__link toc-highlight" href="/blog/lets-make-production-ready-web-service#administration-정리">Administration: 정리</a></li></ul></li><li><a class="table-of-contents__link toc-highlight" href="/blog/lets-make-production-ready-web-service#reliability">Reliability</a><ul><li><a class="table-of-contents__link toc-highlight" href="/blog/lets-make-production-ready-web-service#사고-리포트">사고 리포트</a></li></ul></li></ul></div></div></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/intro">Tutorial</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://twitter.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
